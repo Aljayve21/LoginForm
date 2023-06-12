@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LoginForm.View
 {
-    public partial class frmStaff : Form
+    public partial class OrderView : Form
     {
-        public frmStaff()
+        public OrderView()
         {
             InitializeComponent();
         }

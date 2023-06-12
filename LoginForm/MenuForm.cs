@@ -18,6 +18,13 @@ namespace LoginForm
             InitializeComponent();
         }
 
+        static MenuForm _obj;
+
+        public static MenuForm Instance
+        {
+            get { if (_obj == null) { _obj = new MenuForm(); } return _obj; }
+        }
+
         public void AddControls(Form f)
         {
             ControlPanel.Controls.Clear();
@@ -27,6 +34,11 @@ namespace LoginForm
             f.Show();
         }
 
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+            lblUser.Text = MainClass.USER;
+            _obj = this;
+        }
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -45,6 +57,21 @@ namespace LoginForm
         private void btnCategories_Click(object sender, EventArgs e)
         {
             AddControls(new CategoryView());
+        }
+
+        private void btnStaff_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmEmployeeView());
+        }
+
+        private void ControlPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnProduct_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmProductView());
         }
     }
 }

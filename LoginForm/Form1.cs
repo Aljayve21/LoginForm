@@ -27,7 +27,7 @@ namespace LoginForm
         private void button1_Click(object sender, EventArgs e)
         {
             String username, user_password;
-            username = txt_username.Text;
+            username = txt_password.Text;
             user_password = txt_password.Text;
 
             try
@@ -98,7 +98,7 @@ namespace LoginForm
         {
             if(MainClass.IsValidUser(txt_username.Text, txt_password.Text) == false)
             {
-                MessageBox.Show("Sorry, Invalid Username and Password please try again later");
+                guna2MessageDialog1.Show("Sorry, Invalid Username or Password");
                 return;
             }
             else
@@ -112,6 +112,11 @@ namespace LoginForm
         private void gunaButton2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

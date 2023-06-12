@@ -30,23 +30,23 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuForm));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.gunaControlBox3 = new Guna.UI.WinForms.GunaControlBox();
-            this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
-            this.btnExit = new Guna.UI.WinForms.GunaControlBox();
-            this.ControlPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblUser = new System.Windows.Forms.Label();
             this.btnSettings = new Guna.UI2.WinForms.Guna2Button();
             this.btnPos = new Guna.UI2.WinForms.Guna2Button();
             this.btnStaff = new Guna.UI2.WinForms.Guna2Button();
             this.btnProduct = new Guna.UI2.WinForms.Guna2Button();
             this.btnCategories = new Guna.UI2.WinForms.Guna2Button();
             this.btnDashboard = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblUser = new System.Windows.Forms.Label();
+            this.gunaControlBox3 = new Guna.UI.WinForms.GunaControlBox();
+            this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
+            this.btnExit = new Guna.UI.WinForms.GunaControlBox();
+            this.ControlPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -63,9 +63,148 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(244, 727);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.AutoRoundedCorners = true;
+            this.btnSettings.BorderRadius = 21;
+            this.btnSettings.CheckedState.FillColor = System.Drawing.Color.BurlyWood;
+            this.btnSettings.FillColor = System.Drawing.Color.Transparent;
+            this.btnSettings.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSettings.ForeColor = System.Drawing.Color.White;
+            this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
+            this.btnSettings.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSettings.ImageOffset = new System.Drawing.Point(10, 0);
+            this.btnSettings.Location = new System.Drawing.Point(31, 545);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(181, 45);
+            this.btnSettings.TabIndex = 7;
+            this.btnSettings.Text = "Settings";
+            this.btnSettings.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSettings.TextOffset = new System.Drawing.Point(29, 0);
+            // 
+            // btnPos
+            // 
+            this.btnPos.AutoRoundedCorners = true;
+            this.btnPos.BorderRadius = 21;
+            this.btnPos.CheckedState.FillColor = System.Drawing.Color.BurlyWood;
+            this.btnPos.FillColor = System.Drawing.Color.Transparent;
+            this.btnPos.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPos.ForeColor = System.Drawing.Color.White;
+            this.btnPos.Image = ((System.Drawing.Image)(resources.GetObject("btnPos.Image")));
+            this.btnPos.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPos.ImageOffset = new System.Drawing.Point(10, 0);
+            this.btnPos.Location = new System.Drawing.Point(31, 482);
+            this.btnPos.Name = "btnPos";
+            this.btnPos.Size = new System.Drawing.Size(181, 45);
+            this.btnPos.TabIndex = 6;
+            this.btnPos.Text = "Point Of Sales";
+            this.btnPos.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPos.TextOffset = new System.Drawing.Point(20, 0);
+            // 
+            // btnStaff
+            // 
+            this.btnStaff.AutoRoundedCorners = true;
+            this.btnStaff.BorderRadius = 21;
+            this.btnStaff.CheckedState.FillColor = System.Drawing.Color.BurlyWood;
+            this.btnStaff.FillColor = System.Drawing.Color.Transparent;
+            this.btnStaff.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnStaff.ForeColor = System.Drawing.Color.White;
+            this.btnStaff.Image = ((System.Drawing.Image)(resources.GetObject("btnStaff.Image")));
+            this.btnStaff.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnStaff.ImageOffset = new System.Drawing.Point(10, 0);
+            this.btnStaff.Location = new System.Drawing.Point(31, 415);
+            this.btnStaff.Name = "btnStaff";
+            this.btnStaff.Size = new System.Drawing.Size(181, 45);
+            this.btnStaff.TabIndex = 5;
+            this.btnStaff.Text = "Employee";
+            this.btnStaff.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnStaff.TextOffset = new System.Drawing.Point(40, 0);
+            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
+            // 
+            // btnProduct
+            // 
+            this.btnProduct.AutoRoundedCorners = true;
+            this.btnProduct.BorderRadius = 21;
+            this.btnProduct.CheckedState.FillColor = System.Drawing.Color.BurlyWood;
+            this.btnProduct.FillColor = System.Drawing.Color.Transparent;
+            this.btnProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnProduct.ForeColor = System.Drawing.Color.White;
+            this.btnProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnProduct.Image")));
+            this.btnProduct.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnProduct.ImageOffset = new System.Drawing.Point(10, 0);
+            this.btnProduct.Location = new System.Drawing.Point(31, 349);
+            this.btnProduct.Name = "btnProduct";
+            this.btnProduct.Size = new System.Drawing.Size(181, 45);
+            this.btnProduct.TabIndex = 4;
+            this.btnProduct.Text = "Products";
+            this.btnProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnProduct.TextOffset = new System.Drawing.Point(30, 0);
+            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
+            // 
+            // btnCategories
+            // 
+            this.btnCategories.AutoRoundedCorners = true;
+            this.btnCategories.BorderRadius = 21;
+            this.btnCategories.CheckedState.FillColor = System.Drawing.Color.BurlyWood;
+            this.btnCategories.FillColor = System.Drawing.Color.Transparent;
+            this.btnCategories.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCategories.ForeColor = System.Drawing.Color.White;
+            this.btnCategories.Image = ((System.Drawing.Image)(resources.GetObject("btnCategories.Image")));
+            this.btnCategories.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCategories.ImageOffset = new System.Drawing.Point(10, 0);
+            this.btnCategories.Location = new System.Drawing.Point(31, 288);
+            this.btnCategories.Name = "btnCategories";
+            this.btnCategories.Size = new System.Drawing.Size(181, 45);
+            this.btnCategories.TabIndex = 3;
+            this.btnCategories.Text = "Categories";
+            this.btnCategories.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCategories.TextOffset = new System.Drawing.Point(25, 0);
+            this.btnCategories.Click += new System.EventHandler(this.btnCategories_Click);
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.AutoRoundedCorners = true;
+            this.btnDashboard.BorderRadius = 21;
+            this.btnDashboard.CheckedState.FillColor = System.Drawing.Color.BurlyWood;
+            this.btnDashboard.FillColor = System.Drawing.Color.Transparent;
+            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
+            this.btnDashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDashboard.ImageOffset = new System.Drawing.Point(10, 0);
+            this.btnDashboard.Location = new System.Drawing.Point(31, 224);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(181, 45);
+            this.btnDashboard.TabIndex = 2;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDashboard.TextOffset = new System.Drawing.Point(25, 0);
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Gilroy-Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(27, 107);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(201, 29);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "BigBrew POS System";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // gunaPictureBox1
+            // 
+            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
+            this.gunaPictureBox1.Location = new System.Drawing.Point(72, 12);
+            this.gunaPictureBox1.Name = "gunaPictureBox1";
+            this.gunaPictureBox1.Size = new System.Drawing.Size(87, 83);
+            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaPictureBox1.TabIndex = 0;
+            this.gunaPictureBox1.TabStop = false;
             // 
             // guna2Panel2
             // 
@@ -77,9 +216,19 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(244, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(1019, 46);
             this.guna2Panel2.TabIndex = 1;
+            // 
+            // lblUser
+            // 
+            this.lblUser.AutoSize = true;
+            this.lblUser.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblUser.Location = new System.Drawing.Point(19, 12);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(54, 19);
+            this.lblUser.TabIndex = 3;
+            this.lblUser.Text = "label2";
+            this.lblUser.Click += new System.EventHandler(this.lblUser_Click);
             // 
             // gunaControlBox3
             // 
@@ -139,182 +288,9 @@
             this.ControlPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ControlPanel.Location = new System.Drawing.Point(244, 46);
             this.ControlPanel.Name = "ControlPanel";
-            this.ControlPanel.ShadowDecoration.Parent = this.ControlPanel;
             this.ControlPanel.Size = new System.Drawing.Size(1019, 681);
             this.ControlPanel.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Gilroy-Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(27, 107);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(201, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "BigBrew POS System";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblUser
-            // 
-            this.lblUser.AutoSize = true;
-            this.lblUser.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblUser.Location = new System.Drawing.Point(19, 12);
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(54, 19);
-            this.lblUser.TabIndex = 3;
-            this.lblUser.Text = "label2";
-            this.lblUser.Click += new System.EventHandler(this.lblUser_Click);
-            // 
-            // btnSettings
-            // 
-            this.btnSettings.AutoRoundedCorners = true;
-            this.btnSettings.BorderRadius = 21;
-            this.btnSettings.CheckedState.FillColor = System.Drawing.Color.BurlyWood;
-            this.btnSettings.CheckedState.Parent = this.btnSettings;
-            this.btnSettings.CustomImages.Parent = this.btnSettings;
-            this.btnSettings.FillColor = System.Drawing.Color.Transparent;
-            this.btnSettings.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSettings.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.HoverState.Parent = this.btnSettings;
-            this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
-            this.btnSettings.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSettings.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btnSettings.Location = new System.Drawing.Point(31, 545);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.ShadowDecoration.Parent = this.btnSettings;
-            this.btnSettings.Size = new System.Drawing.Size(181, 45);
-            this.btnSettings.TabIndex = 7;
-            this.btnSettings.Text = "Settings";
-            this.btnSettings.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSettings.TextOffset = new System.Drawing.Point(29, 0);
-            // 
-            // btnPos
-            // 
-            this.btnPos.AutoRoundedCorners = true;
-            this.btnPos.BorderRadius = 21;
-            this.btnPos.CheckedState.FillColor = System.Drawing.Color.BurlyWood;
-            this.btnPos.CheckedState.Parent = this.btnPos;
-            this.btnPos.CustomImages.Parent = this.btnPos;
-            this.btnPos.FillColor = System.Drawing.Color.Transparent;
-            this.btnPos.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnPos.ForeColor = System.Drawing.Color.White;
-            this.btnPos.HoverState.Parent = this.btnPos;
-            this.btnPos.Image = ((System.Drawing.Image)(resources.GetObject("btnPos.Image")));
-            this.btnPos.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPos.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btnPos.Location = new System.Drawing.Point(31, 482);
-            this.btnPos.Name = "btnPos";
-            this.btnPos.ShadowDecoration.Parent = this.btnPos;
-            this.btnPos.Size = new System.Drawing.Size(181, 45);
-            this.btnPos.TabIndex = 6;
-            this.btnPos.Text = "Point Of Sales";
-            this.btnPos.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPos.TextOffset = new System.Drawing.Point(20, 0);
-            // 
-            // btnStaff
-            // 
-            this.btnStaff.AutoRoundedCorners = true;
-            this.btnStaff.BorderRadius = 21;
-            this.btnStaff.CheckedState.FillColor = System.Drawing.Color.BurlyWood;
-            this.btnStaff.CheckedState.Parent = this.btnStaff;
-            this.btnStaff.CustomImages.Parent = this.btnStaff;
-            this.btnStaff.FillColor = System.Drawing.Color.Transparent;
-            this.btnStaff.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnStaff.ForeColor = System.Drawing.Color.White;
-            this.btnStaff.HoverState.Parent = this.btnStaff;
-            this.btnStaff.Image = ((System.Drawing.Image)(resources.GetObject("btnStaff.Image")));
-            this.btnStaff.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnStaff.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btnStaff.Location = new System.Drawing.Point(31, 415);
-            this.btnStaff.Name = "btnStaff";
-            this.btnStaff.ShadowDecoration.Parent = this.btnStaff;
-            this.btnStaff.Size = new System.Drawing.Size(181, 45);
-            this.btnStaff.TabIndex = 5;
-            this.btnStaff.Text = "Staff";
-            this.btnStaff.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnStaff.TextOffset = new System.Drawing.Point(40, 0);
-            // 
-            // btnProduct
-            // 
-            this.btnProduct.AutoRoundedCorners = true;
-            this.btnProduct.BorderRadius = 21;
-            this.btnProduct.CheckedState.FillColor = System.Drawing.Color.BurlyWood;
-            this.btnProduct.CheckedState.Parent = this.btnProduct;
-            this.btnProduct.CustomImages.Parent = this.btnProduct;
-            this.btnProduct.FillColor = System.Drawing.Color.Transparent;
-            this.btnProduct.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnProduct.ForeColor = System.Drawing.Color.White;
-            this.btnProduct.HoverState.Parent = this.btnProduct;
-            this.btnProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnProduct.Image")));
-            this.btnProduct.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnProduct.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btnProduct.Location = new System.Drawing.Point(31, 349);
-            this.btnProduct.Name = "btnProduct";
-            this.btnProduct.ShadowDecoration.Parent = this.btnProduct;
-            this.btnProduct.Size = new System.Drawing.Size(181, 45);
-            this.btnProduct.TabIndex = 4;
-            this.btnProduct.Text = "Products";
-            this.btnProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnProduct.TextOffset = new System.Drawing.Point(30, 0);
-            // 
-            // btnCategories
-            // 
-            this.btnCategories.AutoRoundedCorners = true;
-            this.btnCategories.BorderRadius = 21;
-            this.btnCategories.CheckedState.FillColor = System.Drawing.Color.BurlyWood;
-            this.btnCategories.CheckedState.Parent = this.btnCategories;
-            this.btnCategories.CustomImages.Parent = this.btnCategories;
-            this.btnCategories.FillColor = System.Drawing.Color.Transparent;
-            this.btnCategories.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCategories.ForeColor = System.Drawing.Color.White;
-            this.btnCategories.HoverState.Parent = this.btnCategories;
-            this.btnCategories.Image = ((System.Drawing.Image)(resources.GetObject("btnCategories.Image")));
-            this.btnCategories.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCategories.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btnCategories.Location = new System.Drawing.Point(31, 288);
-            this.btnCategories.Name = "btnCategories";
-            this.btnCategories.ShadowDecoration.Parent = this.btnCategories;
-            this.btnCategories.Size = new System.Drawing.Size(181, 45);
-            this.btnCategories.TabIndex = 3;
-            this.btnCategories.Text = "Categories";
-            this.btnCategories.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCategories.TextOffset = new System.Drawing.Point(25, 0);
-            this.btnCategories.Click += new System.EventHandler(this.btnCategories_Click);
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.AutoRoundedCorners = true;
-            this.btnDashboard.BorderRadius = 21;
-            this.btnDashboard.CheckedState.FillColor = System.Drawing.Color.BurlyWood;
-            this.btnDashboard.CheckedState.Parent = this.btnDashboard;
-            this.btnDashboard.CustomImages.Parent = this.btnDashboard;
-            this.btnDashboard.FillColor = System.Drawing.Color.Transparent;
-            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.HoverState.Parent = this.btnDashboard;
-            this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
-            this.btnDashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDashboard.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btnDashboard.Location = new System.Drawing.Point(31, 224);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.ShadowDecoration.Parent = this.btnDashboard;
-            this.btnDashboard.Size = new System.Drawing.Size(181, 45);
-            this.btnDashboard.TabIndex = 2;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDashboard.TextOffset = new System.Drawing.Point(25, 0);
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
-            // 
-            // gunaPictureBox1
-            // 
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(72, 12);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(87, 83);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox1.TabIndex = 0;
-            this.gunaPictureBox1.TabStop = false;
+            this.ControlPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ControlPanel_Paint);
             // 
             // MenuForm
             // 
@@ -331,9 +307,9 @@
             this.Name = "MenuForm";
             this.Text = "MenuForm";
             this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
